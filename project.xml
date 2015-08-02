@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="KissingTime" package="KissingTime" version="1.0.0" company="Amidos" />
+	
+	<!-- output -->
+	<app main="Main" file="KissingTime" path="bin" />
+	
+	<window background="#000000" fps="60" />
+	<window width="800" height="600" resizable="false" unless="mobile" />
+	<window orientation="landscape" vsync="false" antialiasing="0"/>
+	
+	<!-- classpath, haxe libs -->
+	<source path="src" />
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	<haxelib name="haxepunk" />
+	
+	<!-- assets -->
+	<icon path="assets/openfl.svg" />
+	<assets path="assets/fonts" rename="fonts" />
+	<assets path="assets/graphics" rename="graphics" />
+	<assets path="assets/sounds" rename="sounds" />
+	
+	<!-- optimize output
+	<haxeflag name="-dce full" /> -->
+	
+</project>
